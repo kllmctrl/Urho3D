@@ -386,7 +386,7 @@ uint64_t now = mach_absolute_time();
 
 if (clock_start_time == 0) {
 kern_return_t mach_status = mach_timebase_info(&timebase_ifo);
-DEBUG_ASSERT(mach_status == KERN_SUCCESS);
+// DEBUG_ASSERT(mach_status == KERN_SUCCESS);
 
 /* appease "unused variable" warning for release builds */
 (void)mach_status;
